@@ -1,0 +1,24 @@
+@import 'bootstrap';
+
+$bgDefault      : #e74c3c;
+$bgHighlight    : #c0392b;
+$colDefault     : #ecf0f1;
+$colHover       : #ffbbbc;
+$colHighlight   : #c0392b;
+
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+
+body {
+	padding-top: 60px;
+}
+
+.footer {
+	margin-top: 50px;
+	color: $gray-light;
+	a {
+		color: $gray;
+	}
+}
