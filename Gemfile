@@ -6,6 +6,8 @@ ruby '2.1.2'
 gem 'rails', '4.1.4'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+gem 'devise'
+gem 'simple_form', github: 'plataformatec/simple_form'
 
 # Use sqlite3 as the database for Active Record
 group :production do

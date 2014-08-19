@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <title>Omrails</title>
@@ -8,9 +9,20 @@
 </head>
 <body>
 	<%= render 'layouts/header' %>
+
 	<div class="container">
+
+		<% flash.each do |name, msg| %>
+ 			<div class="alert alert-<%= name.to_s == 'notice' ? 'success' : 'danger' %>">             
+				 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			</div>		
+		<% end %>
+	
 		<%= yield %>
+	
 		<%= render 'layouts/footer' %>
+
 	</div>
 </body>
 </html>
